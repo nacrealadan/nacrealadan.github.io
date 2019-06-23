@@ -29,13 +29,13 @@ function on_result(e)
 		playPreviousTrackButton.on('click',function(){ selectTrack(-1);} );
 		break;
 		case "start" : 
-		 playPause();
+		 audio.paused();
 		break;
 		case "stop" : 
-		playPause();
+		audio.paused();
 		break;
 		case "pause" : 
-		playPause();
+		audio.paused();
 		break;
 	}	
 }
