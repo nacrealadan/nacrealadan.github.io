@@ -23,19 +23,23 @@ function on_result(e)
 	switch(command) {
 
 		case "next" : 
-		playNextTrackButton.on('click',function(){ selectTrack(1);});
+		$("#play-next").click();
 		break;
+			
 		case "previous" : 
-		playPreviousTrackButton.on('click',function(){ selectTrack(-1);} );
+		$("#play-previous").click();
 		break;
+			
 		case "start" : 
-		 audio.paused();
+		 $("#play-pause-button").click();
 		break;
+			
 		case "stop" : 
-		audio.paused();
+		$("#play-pause-button").click();
 		break;
+			
 		case "pause" : 
-		audio.paused();
+		$("#play-pause-button").click();
 		break;
 	}	
 }
