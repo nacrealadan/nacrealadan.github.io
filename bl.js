@@ -5,7 +5,7 @@ function bt() {
     return;
   }
   
-  navigator.bluetooth.requestDevice()
+  navigator.bluetooth.requestDevice(serviceFilters)
     .then(function (device) {
       return device.gatt.connect();
     })
