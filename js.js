@@ -18,7 +18,7 @@ function on_speech_end()
 function on_result(e)
 {
 	let tokens = e.results[0][0].transcript.split(" ")
-	alert(tokens)
+	
 	let command = tokens.find(val=>val == "next" || val == "previous" || val == "start" || val == "stop" || val == "pause" )
 	switch(command) {
 
